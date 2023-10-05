@@ -1,3 +1,5 @@
+WARNING: This branch is retained for legacy purposes, but is not maintained. Use at your own risk.
+
 This Snakemake workflow takes paired-end whole-genome bisulfite sequencing (WGBS) data and processes it using
 BISulfite-seq CUI Toolkit (BISCUIT).
 
