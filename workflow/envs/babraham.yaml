@@ -6,6 +6,6 @@ channels:
 dependencies:
     - fastqc=0.12.1
     - trim-galore=0.6.10
-    - fastq-screen=0.15.3
+    - fastq-screen=0.16.0
     - bismark=0.24.2
     - pigz=2.8
