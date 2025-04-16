@@ -39,6 +39,7 @@ The following dependencies are downloaded when running with `--use-conda`, other
 | Package        | Conda Version Downloaded | Notes |
 |:---------------|:------------------------:|:------|
 | `snakemake`    | 9.3+                     | Needed before running pipeline |
+| `mamba`        | 2.1.0                    | Needed before running pipeline |
 | `biscuit`      | 1.6.1                    |       |
 | `htslib`       | 1.21                     |       |
 | `samtools`     | 1.21                     |       |
