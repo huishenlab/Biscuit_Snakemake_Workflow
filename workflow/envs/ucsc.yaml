@@ -1,0 +1,8 @@
+name: ucsc
+channels:
+    - conda-forge
+    - bioconda
+    - defaults
+dependencies:
+    - perl=5.32.1
+    - ucsc-bedgraphtobigwig=455

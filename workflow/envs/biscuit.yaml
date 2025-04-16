@@ -10,4 +10,3 @@ dependencies:
     - dupsifter=1.3.0.20241113
     - parallel=20231122
     - bedtools=2.31.1
-    - ucsc-bedgraphtobigwig=455

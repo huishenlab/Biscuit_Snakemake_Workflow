@@ -301,7 +301,7 @@ rule beta_bigwigs:
         mem_gb = config['hpc_parameters']['intermediate_memory_gb'],
         time = config['runtime']['medium'],
     conda:
-        '../envs/biscuit.yaml'
+        '../envs/ucsc.yaml'
     envmodules:
         config['envmodules']['ucsc'],
         config['envmodules']['htslib'],
