@@ -189,8 +189,8 @@ region_centered_bin_averages:
 make_bigwigs:
     # Make Bigwig files from BED file output of biscuit vcf2bed
     run: False
-    # Pileups have a min of 3 by default, so values <= 3 have no effect
-    min_depth: 3
+    # In BISCUIT v1.6.0, min depth in vcf2bed was changed from 3 to 1, so change min_depth to 1
+    min_depth: 1
     # Valid options are "CA", "CC", "CT", "CG", "mergecg". Case-sensitive
     contexts: ['mergecg']
 #-----------------------------------------------------------------------------------------------------------------------
