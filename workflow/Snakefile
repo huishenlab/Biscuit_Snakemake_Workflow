@@ -5,7 +5,7 @@ import re
 from snakemake.utils import min_version
 
 # Set minimum Snakemake version
-min_version('9.3')
+min_version('8.0')
 
 # Set some predetermined values
 configfile:
