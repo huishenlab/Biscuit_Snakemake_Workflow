@@ -36,35 +36,36 @@ to meet different needs.
 # Dependencies
 
 The following dependencies are downloaded when running with `--use-conda`, otherwise you must have these in your PATH.
-| Package        | Conda Version Downloaded | Notes |
-|:---------------|:------------------------:|:------|
-| `snakemake`    | 9.3+                     | Needed before running pipeline |
-| `mamba`        | 2.1.0                    | Needed before running pipeline |
-| `biscuit`      | 1.6.1                    |       |
-| `htslib`       | 1.21                     |       |
-| `samtools`     | 1.21                     |       |
-| `dupsifter`    | 1.3.0                    |       |
-| `parallel`     | 20230322                 |       |
-| `bedtools`     | 2.30.1                   |       |
-| `perl`         | 5.32.1                   | Only required if running `beta_bigwigs` |
-| `ucsc-bedgraphtobigwig` | 455             | Only required if running `beta_bigwigs` |
-| `preseq`       | 3.2.0                    | Must be compiled with htslib enabled |
-| `fastqc`       | 0.12.1                   |       |
-| `trim_galore`  | 0.6.10                   |       |
-| `fastq_screen` | 0.16.0                   | Only required if running `fastq_screen` |
-| `bismark`      | 0.24.2                   | Only required if running `fastq_screen` |
-| `pigz`         | 2.8                      |       |
-| `python`       | 3.13.3                   |       |
-| `pandas`       | 2.2.3                    |       |
-| `numpy`        | 2.2.4                    |       |
-| `matplotlib`   | 3.10.1                   |       |
-| `seaborn`      | 0.13.2                   |       |
-| `multiqc`      | 1.28                     |       |
-| `R`            | 4.4.3                    |       |
-| `tidyverse`    | 2.0.0                    | Only required for plotting methylation controls |
-| `ggplot2`      | 3.5.2                    | Only required for plotting methylation controls |
-| `patchwork`    | 1.3.0                    | Only required for plotting methylation controls |
-| `viridislite`  | 0.4.2                    | Only required for plotting methylation controls |
+| Package          | Conda Version Downloaded | Notes |
+|:-----------------|:------------------------:|:------|
+| `snakemake`      | 9.3+                     | Needed before running pipeline |
+| `snakemake-executor-plugin-cluster-generic` | 1.0.9 | Needed before running pipeline |
+| `mamba`          | 2.1.0                    | Needed before running pipeline |
+| `biscuit`        | 1.6.1                    |       |
+| `htslib`         | 1.21                     |       |
+| `samtools`       | 1.21                     |       |
+| `dupsifter`      | 1.3.0                    |       |
+| `parallel`       | 20230322                 |       |
+| `bedtools`       | 2.30.1                   |       |
+| `perl`           | 5.32.1                   | Only required if running `beta_bigwigs` |
+| `ucsc-bedgraphtobigwig` | 455               | Only required if running `beta_bigwigs` |
+| `preseq`         | 3.2.0                    | Must be compiled with htslib enabled |
+| `fastqc`         | 0.12.1                   |       |
+| `trim_galore`    | 0.6.10                   |       |
+| `fastq_screen`   | 0.16.0                   | Only required if running `fastq_screen` |
+| `bismark`        | 0.24.2                   | Only required if running `fastq_screen` |
+| `pigz`           | 2.8                      |       |
+| `python`         | 3.13.3                   |       |
+| `pandas`         | 2.2.3                    |       |
+| `numpy`          | 2.2.4                    |       |
+| `matplotlib`     | 3.10.1                   |       |
+| `seaborn`        | 0.13.2                   |       |
+| `multiqc`        | 1.28                     |       |
+| `R`              | 4.4.3                    |       |
+| `tidyverse`      | 2.0.0                    | Only required for plotting methylation controls |
+| `ggplot2`        | 3.5.2                    | Only required for plotting methylation controls |
+| `patchwork`      | 1.3.0                    | Only required for plotting methylation controls |
+| `viridislite`    | 0.4.2                    | Only required for plotting methylation controls |
 
 Two things of note, 1) it is easiest when working with `snakemake` to install `mamba` using `conda` when running with
 `--use-conda`, and 2) it is preferable to install `snakemake` using `conda`, rather than using a module. This is due to
