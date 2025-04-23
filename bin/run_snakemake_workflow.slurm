@@ -3,18 +3,18 @@
 #SBATCH -J SNAKEMASTER
 #SBATCH -o logs/workflows/workflow_output-%j.log
 #SBATCH --ntasks 1
-#SBATCH --time 240:00:00
+#SBATCH --time 120:00:00
 #SBATCH --mem=8G
-
-mkdir -p logs/workflows
-
-cd ${SLURM_SUBMIT_DIR}
 
 CONFIG_FILE=config/config.yaml
 
+cd ${SLURM_SUBMIT_DIR}
+
+mkdir -p logs/workflows
+
 # Add snakemake to PATH here
 if [[ `which snakemake 2>&1 /dev/null` ]]; then
-    snakemake_module="bbc2/snakemake/snakemake-7.25.0"
+    snakemake_module="bbc2/snakemake/snakemake-8.25.2"
 
     module load $snakemake_module
 fi
@@ -33,9 +33,11 @@ snakemake \
     --use-conda \
     --jobs 20 \
     --configfile ${CONFIG_FILE} \
-    --cluster "mkdir -p logs/{rule}; sbatch \
+    --executor cluster-generic \
+    --cluster-generic-submit-cmd "mkdir -p logs/{rule}; sbatch \
         --export=ALL \
-        --ntasks {threads} \
+        --nodes 1 \
+        --ntasks-per-node {threads} \
         --mem={resources.mem_gb}G \
         -t {resources.time} \
         -o logs/{rule}/{rule}-%j.log"
