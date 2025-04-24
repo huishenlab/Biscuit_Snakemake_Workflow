@@ -38,7 +38,7 @@ to meet different needs.
 The following dependencies are downloaded when running with `--use-conda`, otherwise you must have these in your PATH.
 | Package          | Conda Version Downloaded | Notes |
 |:-----------------|:------------------------:|:------|
-| `snakemake`      | 9.3+                     | Needed before running pipeline |
+| `snakemake`      | 8.0+                     | Needed before running pipeline |
 | `snakemake-executor-plugin-cluster-generic` | 1.0.9 | Needed before running pipeline |
 | `mamba`          | 2.1.0                    | Needed before running pipeline |
 | `biscuit`        | 1.6.1                    |       |
