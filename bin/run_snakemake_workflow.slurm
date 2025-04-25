@@ -5,6 +5,7 @@
 #SBATCH --ntasks 1
 #SBATCH --time 120:00:00
 #SBATCH --mem=8G
+#SBATCH --partition=<FILL IN YOUR PARTITION NAME HERE>
 
 CONFIG_FILE=config/config.yaml
 
