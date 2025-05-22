@@ -113,6 +113,29 @@ files in `config/config.yaml`.
 + Then submit the workflow to an HPC using something similar to `bin/run_snakemake_workflow.slurm` (e.g.,
 `sbatch bin/run_snakemake_workflow.slurm`). `bin/run_snakemake_workflow.slurm` works for a SLURM queue
 system. A PBS/Torque version is available in a previous release on GitHub for those who need it.
+  + Note, if you have issues with SLURM jobs being submitted, try specifying the partition to use in the
+  `--cluster-generic-submit-cmd` portion of the `snakemake` invocation. Two examples can be seen below:
+```
+# One partition
+--cluster-generic-submit-cmd "mkdir -p logs/{rule}; sbatch \
+    --export=ALL \
+    --partition=part1 \
+    --nodes 1 \
+    --ntasks-per-node {threads} \
+    --mem={resources.mem_gb}G \
+    -t {resources.time} \
+    -o logs/{rule}/{rule}-%j.log"
+
+# Multiple partitions
+--cluster-generic-submit-cmd "mkdir -p logs/{rule}; sbatch \
+    --export=ALL \
+    --partition=part1,part2,part3 \
+    --nodes 1 \
+    --ntasks-per-node {threads} \
+    --mem={resources.mem_gb}G \
+    -t {resources.time} \
+    -o logs/{rule}/{rule}-%j.log"
+```
 
 # After the workflow
 
