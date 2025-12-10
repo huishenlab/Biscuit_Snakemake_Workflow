@@ -41,26 +41,26 @@ The following dependencies are downloaded when running with `--use-conda`, other
 | `snakemake`      | 8.0+                     | Needed before running pipeline |
 | `snakemake-executor-plugin-cluster-generic` | 1.0.9 | Needed before running pipeline |
 | `mamba`          | 2.1.0                    | Needed before running pipeline |
-| `biscuit`        | 1.7.0                    |       |
-| `htslib`         | 1.21                     |       |
-| `samtools`       | 1.21                     |       |
+| `biscuit`        | 1.7.1                    |       |
+| `htslib`         | 1.22.1                   |       |
+| `samtools`       | 1.22.1                   |       |
 | `dupsifter`      | 1.3.0                    |       |
 | `parallel`       | 20230322                 |       |
-| `bedtools`       | 2.30.1                   |       |
+| `bedtools`       | 2.31.1                   |       |
 | `perl`           | 5.32.1                   | Only required if running `beta_bigwigs` |
 | `ucsc-bedgraphtobigwig` | 455               | Only required if running `beta_bigwigs` |
 | `preseq`         | 3.2.0                    | Must be compiled with htslib enabled |
 | `fastqc`         | 0.12.1                   |       |
 | `trim_galore`    | 0.6.10                   |       |
 | `fastq_screen`   | 0.16.0                   | Only required if running `fastq_screen` |
-| `bismark`        | 0.24.2                   | Only required if running `fastq_screen` |
+| `bismark`        | 0.25.1                   | Only required if running `fastq_screen` |
 | `pigz`           | 2.8                      |       |
 | `python`         | 3.13.3                   |       |
-| `pandas`         | 2.2.3                    |       |
-| `numpy`          | 2.2.4                    |       |
-| `matplotlib`     | 3.10.1                   |       |
+| `pandas`         | 2.3.3                    |       |
+| `numpy`          | 2.3.5                    |       |
+| `matplotlib`     | 3.10.7                   |       |
 | `seaborn`        | 0.13.2                   |       |
-| `multiqc`        | 1.28                     |       |
+| `multiqc`        | 1.33                     |       |
 | `R`              | 4.4.3                    |       |
 | `tidyverse`      | 2.0.0                    | Only required for plotting methylation controls |
 | `ggplot2`        | 3.5.2                    | Only required for plotting methylation controls |
