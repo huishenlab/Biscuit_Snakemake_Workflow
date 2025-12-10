@@ -8,5 +8,5 @@ dependencies:
     - pandas=2.3.3
     - numpy=2.3.5
     - matplotlib-base=3.10.7
-    - multiqc=1.28
+    - multiqc=1.33
     - seaborn=0.13.2
