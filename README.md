@@ -41,9 +41,9 @@ The following dependencies are downloaded when running with `--use-conda`, other
 | `snakemake`      | 8.0+                     | Needed before running pipeline |
 | `snakemake-executor-plugin-cluster-generic` | 1.0.9 | Needed before running pipeline |
 | `mamba`          | 2.1.0                    | Needed before running pipeline |
-| `biscuit`        | 1.7.1                    |       |
-| `htslib`         | 1.22.1                   |       |
-| `samtools`       | 1.22.1                   |       |
+| `biscuit`        | 1.8.0                    |       |
+| `htslib`         | 1.23.1                   |       |
+| `samtools`       | 1.23.1                   |       |
 | `dupsifter`      | 1.3.0                    |       |
 | `parallel`       | 20230322                 |       |
 | `bedtools`       | 2.31.1                   |       |
@@ -55,12 +55,12 @@ The following dependencies are downloaded when running with `--use-conda`, other
 | `fastq_screen`   | 0.16.0                   | Only required if running `fastq_screen` |
 | `bismark`        | 0.25.1                   | Only required if running `fastq_screen` |
 | `pigz`           | 2.8                      |       |
-| `python`         | 3.13.3                   |       |
-| `pandas`         | 2.3.3                    |       |
-| `numpy`          | 2.3.5                    |       |
-| `matplotlib`     | 3.10.7                   |       |
+| `python`         | 3.14.4                   |       |
+| `pandas`         | 3.0.2                    |       |
+| `numpy`          | 2.4.4                    |       |
+| `matplotlib`     | 3.10.9                   |       |
 | `seaborn`        | 0.13.2                   |       |
-| `multiqc`        | 1.33                     |       |
+| `multiqc`        | 1.33 4                   |       |
 | `R`              | 4.4.3                    |       |
 | `tidyverse`      | 2.0.0                    | Only required for plotting methylation controls |
 | `ggplot2`        | 3.5.2                    | Only required for plotting methylation controls |
