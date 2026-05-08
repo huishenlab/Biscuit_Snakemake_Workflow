@@ -16,6 +16,7 @@ def check_genome(wildcards):
         return config['create_assets']['genome']
 
 # Determine which GENCODE annotation file to download
+# TODO: Can add mm39 as an option (release_M38 as of 8 May 2026)
 def get_annotation_file(wildcards):
     base = 'http://ftp.ebi.ac.uk/pub/databases/gencode'
     gen = check_genome(wildcards)
@@ -25,8 +26,8 @@ def get_annotation_file(wildcards):
         return f'{base}/Gencode_human/release_19/gencode.v19.annotation.gtf.gz'
     elif gen == 'mm9':
         return f'{base}/Gencode_mouse/release_M1/gencode.vM1.annotation.gtf.gz'
-    else:
-        return f'{base}/Gencode_mouse/release_M27/gencode.vM27.annotation.gtf.gz'
+    elif gen == 'mm10':
+        return f'{base}/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz'
 
 rule general_assets:
     input:
