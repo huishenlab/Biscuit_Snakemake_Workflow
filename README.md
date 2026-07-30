@@ -60,7 +60,7 @@ The following dependencies are downloaded when running with `--use-conda`, other
 | `numpy`          | 2.4.4                    |       |
 | `matplotlib`     | 3.10.9                   |       |
 | `seaborn`        | 0.13.2                   |       |
-| `multiqc`        | 1.33 4                   |       |
+| `multiqc`        | 1.34                     |       |
 | `R`              | 4.4.3                    |       |
 | `tidyverse`      | 2.0.0                    | Only required for plotting methylation controls |
 | `ggplot2`        | 3.5.2                    | Only required for plotting methylation controls |
