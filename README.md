@@ -41,10 +41,10 @@ The following dependencies are downloaded when running with `--use-conda`, other
 | `snakemake`      | 8.0+                     | Needed before running pipeline |
 | `snakemake-executor-plugin-cluster-generic` | 1.0.9 | Needed before running pipeline |
 | `mamba`          | 2.1.0                    | Needed before running pipeline |
-| `biscuit`        | 1.10.1                   |       |
+| `biscuit`        | 1.10.2                   |       |
 | `htslib`         | 1.23.1                   |       |
 | `samtools`       | 1.23.1                   |       |
-| `dupsifter`      | 1.3.0                    |       |
+| `dupsifter`      | 1.4.0                    |       |
 | `parallel`       | 20230322                 |       |
 | `bedtools`       | 2.31.1                   |       |
 | `perl`           | 5.32.1                   | Only required if running `beta_bigwigs` |
