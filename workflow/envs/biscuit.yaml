@@ -4,7 +4,7 @@ channels:
     - bioconda
     - defaults
 dependencies:
-    - biscuit=1.10.1.20260804
+    - biscuit=1.10.2.20260818
     - htslib=1.23.1
     - samtools=1.23.1
     - dupsifter=1.4.0.20260818
